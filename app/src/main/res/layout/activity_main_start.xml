@@ -22,6 +22,8 @@
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/upload"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -31,6 +33,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/discard"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button4"
         app:layout_constraintEnd_toStartOf="@+id/button4" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/camera"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editTextTextPersonName"
+        tools:layout_editor_absoluteX="91dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/camera_value"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="546dp" />
 </android.support.constraint.ConstraintLayout>
